@@ -18,14 +18,15 @@ Python Overview:
 2) Intro to Strings
 3) Intro to Booleans & "Truthy vs. Falsy"
 4) Intro to Comparison Operators
-5) Intro to Integers & Floats
-6) Intro to Lists
-7) Intro to Loops
-8) Intro to Dictionaries
-9) Intro to Functions
-10) Intro to Imports
-11) Intro to File Manipulation
-12) Intro to Classes
+5) Intro to Flow Control & Conditional Statements
+6) Intro to Integers & Floats
+7) Intro to Lists
+8) Intro to Loops
+9) Intro to Dictionaries
+10) Intro to Functions
+11) Intro to Imports
+12) Intro to File Manipulation
+13) Intro to Classes
 Final Step: Create a project
 
 ____________________________________________________________
