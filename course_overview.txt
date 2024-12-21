@@ -13,24 +13,24 @@ Setup Topics:
 ____________________________________________________________
 
 Python Overview:
-1) Basic Data Types
-2) Variables
-3) Intro to Strings
-4) Intro to Booleans & "Truthy vs. Falsy"
-5) Intro to Comparison Operators
-6) Intro to Integers & Floats
-7) Intro to Lists
-8) Intro to Loops
-9) Intro to Dictionaries
-10) Intro to Functions
-11) Intro to Imports
-12) Intro to File Manipulation
-13) Intro to Classes
+0) Basic Data Types
+1) Variables
+2) Intro to Strings
+3) Intro to Booleans & "Truthy vs. Falsy"
+4) Intro to Comparison Operators
+5) Intro to Integers & Floats
+6) Intro to Lists
+7) Intro to Loops
+8) Intro to Dictionaries
+9) Intro to Functions
+10) Intro to Imports
+11) Intro to File Manipulation
+12) Intro to Classes
 Final Step: Create a project
 
 ____________________________________________________________
 
-1) Basic Data Types
+0) Basic Data Types
     - String str()
     - Integer int()
     - Float float()
@@ -38,39 +38,39 @@ ____________________________________________________________
     - List lst()
     - Set set()
     - Dictionary dict()
-2) Variables
+1) Variables
     - What they are and how they work
     - Variable naming concepts/rules
     - Why they are important
-3) Intro to Strings
+2) Intro to Strings
     - How to print() strings to the screen (aka standard-out)
     - Introduce string (Class specific) methods
     - Iterate through strings
     - Slicing & Indexing
     - How to format strings to use variables
         - Multiple different methods
-4) Intro to Booleans & "Truthy vs. Falsy"
+3) Intro to Booleans & "Truthy vs. Falsy"
     - True & False
     - Truthy & Falsy
-5) Intro to Comparison Operators and Flow Control
+4) Intro to Comparison Operators and Flow Control
     - What they are and How to use them effectively
     -  "==" | "!=" | "is" | "not"
     - If | elif | else:
-6) Intro to Integers & Floats
+5) Intro to Integers & Floats
     - What is an integer?
     - Introduce integer (Class specific) methods
-7) Intro to Lists
+6) Intro to Lists
     - Creating (Defining) Lists
     - Introduce List (Class specific) Methods
     - How to iterate through them
     - Slicing & Indexing
-8) Intro to Loops
+7) Intro to Loops
     - For Loops
     - While Loops
     - How to break out of a loop
-9) Intro to Dictionaries
-10) Intro to Functions
-11) Intro to Imports
+8) Intro to Dictionaries
+9) Intro to Functions
+10) Intro to Imports
     - What is "pip"
-12) Intro to File Manipulation
-13) Intro to Classes
+11) Intro to File Manipulation
+12) Intro to Classes
