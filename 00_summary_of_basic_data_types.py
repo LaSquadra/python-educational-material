@@ -21,8 +21,8 @@ Basic Data Types
 #  This is an example of Documentation String (doc string for short)
 """
 In Python there are a large variety of "Data Types" that you may come across.
-The primary data types that most everything else is built off of are listed above. 
-In this section we will explain what they are, how they are different and when you would use them.  
+The primary data types that most everything else is built off of are listed above.
+In this section we will explain what they are, how they are different and when you would use them.
 """
 
 # STRINGS:
@@ -50,3 +50,24 @@ In this section we will explain what they are, how they are different and when y
 #      Modulus: %          (5 % 4 = 1)
 #  Math in Python follows all the same order of operations one would expect.
 #
+
+
+"""
+ - Bool bool()
+TODO: Add more information about Booleans
+"""
+
+"""
+ - List lst()
+TODO: Add more information about Lists
+"""
+
+"""
+ - Set set()
+TODO: Add more information about Sets
+ """
+ 
+"""
+ - Dictionary dict()
+TODO: Add more information about Dictionaries
+"""
