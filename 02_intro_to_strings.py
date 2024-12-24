@@ -42,6 +42,28 @@ greeting = "Hello" + " " + "World" # <-- This will return/display "Hello World" 
 # We can also use the '+' operator to combine a string with a variable.
 combined_string = greeting + "!" # <-- This will return/display "Hello World!" to the console
 
+"""
+The following methods are called "formatted strings" and are used to format strings in Python where the variable types do not matter.
+"""
+user_name = "John"
+# 1. The 'f-string' method:
+print(f"My name is: {user_name}")  # <-- This will return/display "My name is: John" to the console
+# NOTE: This is called an 'f-string' and is a more modern way of formatting strings in Python.
+# It is also the most efficient way of formatting strings in Python. (outside of logging statements)
+
+# 2. The 'format()' method:
+print("My name is: {}".format(user_name))  # <-- This will return/display "My name is: John" to the console
+# NOTE: This is an older way of formatting strings in Python.
+# It is still used in some cases, but the 'f-string' method is preferred.
+# This method is used when writing code that is compatible with older versions of Python.
+# This method is preferred when using logging statements as it does not compute unless the logging statement is triggered.
+
+# 3. The '%' method: (%s for strings, %d for integers, %f for floats)
+print("My name is: %s" % user_name)  # <-- This will return/display "My name is: John" to the console
+# NOTE: This is the oldest way of formatting strings in Python.
+# It is not recommended to use this method for string formatting in modern versions of Python.
+
+
 # Strings (and all other data types) have different methods that can be used to manipulate them.
 # A method is a function that is associated with a specific data type. (We will cover methods and functions more later)
 # The .upper() method is used to convert a string to uppercase.
