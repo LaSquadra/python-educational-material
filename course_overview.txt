@@ -14,24 +14,6 @@ ____________________________________________________________
 
 Python Overview:
 0) Basic Data Types
-1) Variables
-2) Intro to Strings
-3) Intro to Booleans & "Truthy vs. Falsy"
-4) Intro to Comparison Operators
-5) Intro to Flow Control & Conditional Statements
-6) Intro to Integers & Floats
-7) Intro to Lists
-8) Intro to Loops
-9) Intro to Dictionaries
-10) Intro to Functions
-11) Intro to Imports
-12) Intro to File Manipulation
-13) Intro to Classes
-Final Step: Create a project
-
-____________________________________________________________
-
-0) Basic Data Types
     - String str()
     - Integer int()
     - Float float()
@@ -53,25 +35,27 @@ ____________________________________________________________
 3) Intro to Booleans & "Truthy vs. Falsy"
     - True & False
     - Truthy & Falsy
-4) Intro to Comparison Operators and Flow Control
+4) Intro to Comparison Operators
     - What they are and How to use them effectively
     -  "==" | "!=" | "is" | "not"
+5) Intro to Flow Control & Conditional Statements
     - If | elif | else:
-5) Intro to Integers & Floats
+6) Intro to Integers & Floats
     - What is an integer?
     - Introduce integer (Class specific) methods
-6) Intro to Lists
+7) Intro to Lists
     - Creating (Defining) Lists
     - Introduce List (Class specific) Methods
     - How to iterate through them
     - Slicing & Indexing
-7) Intro to Loops
+8) Intro to Loops
     - For Loops
     - While Loops
     - How to break out of a loop
-8) Intro to Dictionaries
-9) Intro to Functions
-10) Intro to Imports
+9) Intro to Dictionaries
+10) Intro to Functions
+11) Intro to Imports
     - What is "pip"
-11) Intro to File Manipulation
-12) Intro to Classes
+12) Intro to File Manipulation
+13) Intro to Classes
+Final Step: Create a project
