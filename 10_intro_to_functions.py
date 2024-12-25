@@ -22,16 +22,17 @@ IMPORTANT NOTES:
 - Functions require the use of the 'return' keyword inorder to provide anything back to the code that called it.
     - without using the 'return' keyword, our greeting_function() above would equate to the None type in Python.
 - Functions are treated as isolated blocks of code that do not have any sense of what is going on outside of them.
-    - We must 'pass arguments' to the function to be able to use them within it.
-    - NOTE: variables being passed to the function are called 'arguments'.
-            Those same variables used within the function are called 'parameters'
+    - We must pass arguments to the function to be able to use them within it.
+    - NOTE: Variables listed when the function is defined are 'parameters'.
+            variables being passed to the function when it is called are 'arguments'.
+            
 Lets explore these two concepts:
 """
-def personalized_greeting(name):
+def personalized_greeting(name): # <-- 'name' is the 'parameter' the function requires/expects.
     print(f"Hello, {name}!  How are you today?")
 # To call the function we created we need to pass the 'name' argument to it.
 name = "James"
-greet_user = personalized_greeting(name)
+greet_user = personalized_greeting(name) # <-- 'name' is the argument we are passing to the function.
 
 # Look at what happens when we try to print() the value of 'greet_user':
 print(greet_user) # <-- This will show the value is 'None'

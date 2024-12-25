@@ -1,5 +1,7 @@
+# coding: utf-8
 """
-Basic Data Types
+Basic Data Types:
+
  - String str()
  - Integer int()
  - Float float()
