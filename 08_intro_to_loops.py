@@ -8,7 +8,7 @@ There are two types of loops in Python:
     - for
     - while
 "for" loops are used to iterate over a sequence of data.
-for looks are very simple conscptually:
+for looks are very simple conceptually:
     - You define a sequence of data
     - You define a variable to hold the current value of the sequence
     - You define the logic to execute for each value in the sequence
