@@ -26,14 +26,24 @@ ranking = 4.5
 print(ranking)  # <-- This will return/display 4.5 to the console
 print(type(ranking))  # <-- This will return/display <class 'float'> to the console
 
-# If you wanted to create a more explicit printed output, you have multiple options.
-# You can use the formatted strings mentioned in the strings section earlier OR you can use the following:
+"""
+If you wanted to create a more explicit printed output, you have multiple options:
+You can use the 'formatted strings' mentioned in the strings section earlier
+  OR
+you can use the following:
+"""
 print("Age:", age)  # <-- This will return/display Age: 35 to the console
     # NOTE: because this is a string ("Age:") and a integer (35), you cannot concatenate them with a '+'
     # You must use a ',' to separate the string and the integer
 print("Age: " + str(age))  # <-- This will return/display Age: 35 to the console
     # NOTE: Optionally, because this is a string ("Age:") and a integer (35), you can convert the integer to a string
     # You can do this by using the str() function.  This is called 'casting' and can be done on various data types.
+
+"""
+NOTE: My personal preference is to use the f-string method from the strings section as I feel it looks the cleanest
+      and you do not need to account for differing data types.
+"""
+print(f"Age: {age}")
 
 
 # We can perform mathematical operations on integers and floats:

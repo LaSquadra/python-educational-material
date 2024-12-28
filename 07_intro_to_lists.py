@@ -26,7 +26,7 @@ lists have a variety of methods that can be used to manipulate the data they con
         - sort() : sorts the list in ascending order
         - reverse() : reverses the order of the list
         - copy() : returns a copy of the list
-    There are many more list methods that can be found in the Python documentation.
+    There are many more list methods that can be found in the Python documentation:
     https://docs.python.org/3/tutorial/datastructures.html
 """
 

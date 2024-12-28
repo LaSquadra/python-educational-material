@@ -33,6 +33,7 @@ def personalized_greeting(name): # <-- 'name' is the 'parameter' the function re
 # To call the function we created we need to pass the 'name' argument to it.
 name = "James"
 greet_user = personalized_greeting(name) # <-- 'name' is the argument we are passing to the function.
+# NOTE: greet_user = personalized_greeting("James") is equally correct.  You can pass a variable or the data directly.
 
 # Look at what happens when we try to print() the value of 'greet_user':
 print(greet_user) # <-- This will show the value is 'None'
@@ -54,17 +55,17 @@ def positional_arguments(name, age, hobby):
     print(f"{name=}") # ***
     print(f"{age=}")
     print(f"{hobby=}")
-user_name = "john"
+user_name = "John"
 user_age = 22
 user_hobby = "Running"
 positional_arguments(user_name, user_age, user_hobby)
 #   *** As of Python 3.10, the syntax of "variable=" within a print statement will yield a more explicit output.
-# NOTE:It is important to pay attention to the order with positional arguments.
-#      The function will
+# NOTE:It is important to pay attention to the order (position) with positional arguments.
+#      The function needs the arguments to be passed in the same order that they are defined in.
 
 # Keyword arguments do not need to be passed in any specific order.
 # Inorder to prevent conflicts with positional arguments, all keyword arguments must be passed AFTER any keyword arguments.
-def keyword_arguments(name="placeholder name", age=45, hobby="placeholder hobby"):
+def keyword_arguments(name="placeholder name", age=0, hobby="placeholder hobby"):
     print(f"{name=}")
     print(f"{age=}")
     print(f"{hobby=}")
@@ -75,16 +76,30 @@ keyword_arguments(name=user_name, age=user_age, hobby=user_hobby)
 
 """
 If you looked closely you may have noticed that the argument being passed to the function
-does not have the same name when it is being used within the function as it does outside the function.
+does not have the same name when it is being used within the function.
 This is because the function has no knowledge of what is happening outside and only knows what you provide.
+In this case, it translates 'user_name' to the internal variable 'name' when you are calling the function.
 """
+# A function using both positional and keyword arguments would be structured as such:
+def both_arguments(name, age=0, hobby="placeholder hobby"):
+    print(f"{name=}")
+    print(f"{age=}")
+    print(f"{hobby=}")
+user_name = "Robert"
+user_age = 56
+user_hobby = "Fly Fishing"
+keyword_arguments(user_name, hobby=user_hobby, age=user_age)
+# NOTE: The positional argument is listed first and the keyword arguments are second (and in any order the user wants)
 
 # Let's use look at another example to show the importance of the 'return' keyword:
 def add_numbers(number_1, number_2):
     total = number_1 + number_2
     return total
 
+
 """
+USING DOC STRINGS:
+
 In most (if not all) coding languages, it is important to document your code.
 This typically means adding comments "# your comment here" to your code to help explain what each section is doing.
 
@@ -146,6 +161,6 @@ list_to_add_1 = [2, 2, 4, 5, 7, 1, 0, 3, 4, 1, 5]  # Creating first list to find
 list_to_add_2 = [1, 5, 7, 2, '4', 1, 8, 2, '9', 0, 4.1, 8]  # Creating second list to find the sum of
 list_of_totals = [check_and_add(list_to_add_1), check_and_add(list_to_add_2)]  # crating a list of the two lists' sums
 print(f"{list_of_totals=}")
-total_of_totals = check_and_add(list_of_totals)  # Finding the sum of the two lists sums
+total_of_totals = check_and_add(list_of_totals)  # Finding the sum of the two lists' sums
 print(f"{total_of_totals=}")
 

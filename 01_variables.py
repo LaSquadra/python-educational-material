@@ -25,7 +25,7 @@ example_integer_variable = 10
 
 """
 We will cover different data types in the next few sections but the above two variables
-are examples of two of the most basic types: strings and integers
+contain examples of two of the most basic types: strings and integers
 """
 
 # You can have the program display the value of a variable using the print() function.
@@ -34,9 +34,10 @@ print(example_string_variable)
 print(example_string_variable_2)
 print(example_integer_variable)
 """
+print(example_string_variable)
+print(example_integer_variable)
 
 # You can also change the value of a variable.
-"""
 example_integer_variable = 20
 print(example_integer_variable)
-"""
+
