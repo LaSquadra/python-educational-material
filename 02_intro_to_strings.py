@@ -67,6 +67,7 @@ print("My name is: %s" % user_name)  # <-- This will return/display "My name is:
 # Strings (and all other data types) have different methods that can be used to manipulate them.
 # A method is a function that is associated with a specific data type. (We will cover methods and functions more later)
 # The .upper() method is used to convert a string to uppercase.
+greeting = "hello world"
 uppercase_greeting = greeting.upper() # <-- This will return/display "HELLO WORLD" to the console
 # Note how the .upper() method is called on the variable 'greeting' using the '.' operator.
 
@@ -89,9 +90,9 @@ split_greeting_2 = greeting.split("o") # <-- This will return/display ['Hell', '
 # The syntax for indexing a string is: string_variable[index]
 """
 "This is a string"
-T = index 0
-h = index 1
-g = index 15 (and also index -1)
+T = index [0]
+h = index [1]
+g = index [15] (and also index [-1])
 """
 # Below is how you would index the string above:
 string_variable = "This is a string"

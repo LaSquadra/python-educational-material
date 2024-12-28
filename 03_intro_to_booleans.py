@@ -30,6 +30,15 @@ With Booleans, there is also the concept of "truthy" and "falsy" values.
         These are essentially anything that doesn't contain data or is 'empty'.
     - All other values are considered "truthy".
 """
+#  EMPTY STRING example (also applies to all other data types with no data)
+empty_string = ''
+#  We are converting the empty string to a boolean then printing that value:
+print(bool(empty_string)) # <-- This will return the value of: False
 
-# We will explore using booleans in the next section (04_intro_to_comparison_operators)
-# For more information on Booleans, see: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
+#  POPULATED STRING example (also applies to all other data types that contain data)
+text_string = 'This string is not empty!'
+#  We are converting the string containing text to a boolean then printing that value:
+print(bool(text_string)) # <-- This will return the value of: True
+
+#  We will explore using booleans in the next section (04_intro_to_comparison_operators)
+#  For more information on Booleans, see: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
