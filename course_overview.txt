@@ -7,7 +7,7 @@ Setup Topics:
 - Installing an Integrated Development Environment (IDE)
     - VSCode (Microsoft Product):  Good for people that want to use multiple languages (Python, R, etc.)
         - https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user (Direct Download Link)
-    - PyCharm Community Edition (JetBrains Product):  Tailored for Python-specific projects
+    - PyCharm Community Edition (JetBrains Product):  Tailored for Python-specific projects (Can also be used for R)
         - https://download.jetbrains.com/python/pycharm-community-2024.3.1.exe
 
 ____________________________________________________________
