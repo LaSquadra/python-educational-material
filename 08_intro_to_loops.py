@@ -77,28 +77,31 @@ counter = 0
 while counter < 5:
     print(counter)
     counter += 1
+"""
+The above loop will iterate until the 'counter' variable is equal to 5.
+The output will be:
+0
+1
+2
+3
+4
+"""
 
-# The above loop will iterate until the 'counter' variable is equal to 5.
-# The output will be:
-# 0
-# 1
-# 2
-# 3
-# 4
+
 
 """
-When using a loop, it is likely you will want to break out of the loop before it gets to the end.
-This is frequently used to exit 'while' loops but can also be useful within 'for' loops.
+When using a loop, it is likely you will want to 'break' out of the loop before it gets to the end.
+The 'break' keyword is frequently used to exit 'while' loops but can also be useful within 'for' loops.
 """
-# Take a look at the following code block:
-is_true = True
-count = 0
-while is_true:
-    if count <= 10:
-        print(count)
-        count +=1
-    else:
-        count = 0
+# # Take a look at the following code block:
+# is_true = True
+# count = 0
+# while is_true:
+#     if count <= 10:
+#         print(count)
+#         count +=1
+#     else:
+#         count = 0
 
 """# In this example, the code will count from 0 to 10 and print that to the screen.
 Once it hits 10 it will reset the counter back to 0 and repeat the process forever
