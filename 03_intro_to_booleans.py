@@ -1,44 +1,47 @@
-# coding=utf-8
+# coding: utf-8
+"""Lesson 03: Booleans.
+
+Booleans represent one of two values: `True` or `False`.
+
+Python also treats some values as truthy or falsy when they are checked in a
+boolean context, such as an `if` statement.
 """
-Booleans:  bool()
 
-Booleans are a data type that can only have one of two values: True or False.
-Booleans are used to represent the truth value of an expression. (e.g. 1 > 2 is False)
-Booleans are used in conditional statements to control the flow of a program. (We will cover this later)
-Booleans are essentially a way to represent the concept of 'yes' or 'no' in Python.
-There are many different ways to create a boolean value in Python:
-    - You can use the '==' operator to compare two values.
-        - For example: 1 == 1 will return True
-    - You can use the '!=' operator to compare two values.
-        - For example: 1 != 1 will return False
-    - You can set a variable to be equal to True or False. (Note the capitalization)
-        - For example: is_true = True
-        - For example: is_false = False
-With Booleans, there is also the concept of "truthy" and "falsy" values.
-    - A "truthy" value is a value that is considered True when evaluated in a Boolean context.
-    - A "falsy" value is a value that is considered False when evaluated in a Boolean context.
-    - In Python, the following values are considered "falsy":
-        - False  <-- Note the capitalization
-        - None  <-- Note the capitalization
-        - 0
-        - 0.0
-        - ''
-        - []
-        - ()
-        - {}
-        - set()
-        These are essentially anything that doesn't contain data or is 'empty'.
-    - All other values are considered "truthy".
-"""
-#  EMPTY STRING example (also applies to all other data types with no data)
-empty_string = ''
-#  We are converting the empty string to a boolean then printing that value:
-print(bool(empty_string)) # <-- This will return the value of: False
 
-#  POPULATED STRING example (also applies to all other data types that contain data)
-text_string = 'This string is not empty!'
-#  We are converting the string containing text to a boolean then printing that value:
-print(bool(text_string)) # <-- This will return the value of: True
+def show_section(title):
+    """Print a consistent section heading for the lesson output."""
+    print(f"\n{title}")
+    print("-" * len(title))
 
-#  We will explore using booleans in the next section (04_intro_to_comparison_operators)
-#  For more information on Booleans, see: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
+
+def create_booleans():
+    """Create boolean values directly and from comparisons."""
+    show_section("Creating booleans")
+
+    is_student = True
+    is_complete = False
+
+    print(f"Is student? {is_student}")
+    print(f"Is complete? {is_complete}")
+    print(f"Does 5 equal 5? {5 == 5}")
+    print(f"Is 2 greater than 10? {2 > 10}")
+
+
+def inspect_truthy_and_falsy_values():
+    """Show common values that become True or False with bool()."""
+    show_section("Truthy and falsy values")
+
+    examples = ["hello", "", [1, 2, 3], [], 1, 0, None]
+
+    for value in examples:
+        print(f"bool({value!r}) -> {bool(value)}")
+
+
+def main():
+    """Run each lesson section in order."""
+    create_booleans()
+    inspect_truthy_and_falsy_values()
+
+
+if __name__ == "__main__":
+    main()

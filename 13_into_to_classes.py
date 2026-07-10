@@ -1,101 +1,96 @@
-# coding=utf-8
-"""
-Classes:
+# coding: utf-8
+"""Lesson 13: Classes.
 
-Classes are Python's way of allowing developers to create their own custom modules that can be shared or used
-in a more dynamic way than creating a simple function within your script.
+Classes let you define your own types of objects. An object can store data in
+attributes and use functions called methods.
 
-With classes, we introduce the concept of 'inheritance'.
-This is where properties of a Class are inherited by its methods.
-We can change virtually everything about how something functions if we understand how to use inheritance properly.
-"""
-# We can view the properties of a class by using the dir() method:
-print(dir(int))
-"""
-Notice how the int class has math-related attributes like:
-    '__add__', '__sub__, '__mul__', '__div__', '__abs__'   (just to name a few))
-These attributes are called 'dunder attributes' (dunder = double-underscore)
-These dictate how a class handles characters like: +, -, *, /
-In math terms, we understand what these are going to do.  For our custom function, we have have them do anything.
+Class vocabulary:
+
+- A class is the blueprint.
+- An instance is one object created from the class.
+- `__init__` runs when a new instance is created.
+- `self` refers to the current instance.
 """
 
-# Let's go over the class we created in the imports section and explain what is going on.
-class ClassToImport:
-    """
-    This is a dummy, demo class to show how imports work.
-    """
-    
-    def __init__(self):
-        print("This code runs when the class is initialized.")
-    
-    @staticmethod
-    def function_to_do_something():
-        print("This code only runs when the method (a function belonging to a class) is called.")
-    
-    print("Any code not contained within a function can be run by simply importing the module.")
+
+def show_section(title):
+    """Print a consistent section heading for the lesson output."""
+    print(f"\n{title}")
+    print("-" * len(title))
 
 
-my_class = ClassToImport()  # This is initializing the class
-my_class.function_to_do_something()  # This is calling a method from the class
+class Student:
+    """Represent a student in a Python course."""
 
-"""
-We will start by breaking it down into its pieces.
+    def __init__(self, name, current_lesson=1):
+        """Create a student with a name and current lesson number."""
+        self.name = name
+        self.current_lesson = current_lesson
 
-We begin by creating the class using the 'class' keyword (similar to 'def' for functions)
-We then name our class. Convention states that we use "CamelCase" for class names.
-Simply put: Capitalize the first letter of each word in the name (rather than using '_' like in functions and variables.
-We then end the line with a colon ':' like we do when we begin any block of code (if/elif/else, loops, functions, etc.)
+    def describe(self):
+        """Return a readable description of the student."""
+        return f"{self.name} is on lesson {self.current_lesson}."
 
-Putting all of that together and we have:
-
-class YourClassName:
-
-
-Next we would add a documentation string to summarize what the class is designed to help do and briefly
-summarize its functionality.
-
-We can then jump into adding methods (functions) to the class to do different things.
-These are created exactly like the functions we created before but now we will have
-the 'self' keyword as the first argument.
-
-class YourClassName:
-    <insert your doc string here>
-    
-    def first_class_method(self):
-        <doc string here>
-        print("This is the first method of our custom class!")
-        return True
+    def advance_lesson(self):
+        """Move the student forward by one lesson."""
+        self.current_lesson += 1
 
 
-You have the option of creating a custom __init__() function which can help set up variables and things you may need.
+class Course:
+    """Represent a course that can contain multiple students."""
 
-    def __init__():
-        self.default_security_string = "aslkoaishnlahoishgeiikajsdngh=="
-        self.default_dns_ip = "8.8.8.8"
-Now anytime your class is initialized, these values will be set and they can be used by the other methods of the class.
+    def __init__(self, title):
+        """Create a course with a title and an empty student list."""
+        self.title = title
+        self.students = []
 
-"""
-# Let's play with the __init__() option and see how it works:
-class ClassToImport:
-    """
-    This is a dummy, demo class to show how imports work.
-    """
-    
-    def __init__(self):
-        self.default_security_string = "aslkoaishnlahoishgeiikajsdngh=="
-        self.default_dns_ip = "8.8.8.8"
-        print("This code runs when the class is initialized.")
-    
-    @staticmethod
-    def function_to_do_something():
-        print("This code only runs when the method (a function belonging to a class) is called.")
-    
-    def using_inherited_values(self):
-        print(self.default_dns_ip)
-        print(self.default_security_string)
-    
-    print("Any code not contained within a function can be run by simply importing the module.")
+    def add_student(self, student):
+        """Add a student to the course."""
+        self.students.append(student)
+
+    def list_students(self):
+        """Print each student currently in the course."""
+        for student in self.students:
+            print(student.describe())
 
 
-my_class = ClassToImport()  # This is initializing the class
-my_class.using_inherited_values()  # This is calling a method from the class
+def inspect_a_builtin_class():
+    """Show that built-in types are classes too."""
+    show_section("Built-in classes")
+
+    print(f"type(5): {type(5)}")
+    print(f"Does int support addition? {'__add__' in dir(int)}")
+
+
+def create_custom_objects():
+    """Create and use instances of custom classes."""
+    show_section("Custom classes")
+
+    student = Student("Ada", current_lesson=13)
+
+    print(student.describe())
+    student.advance_lesson()
+    print(student.describe())
+
+
+def compose_objects():
+    """Store objects inside another object."""
+    show_section("Objects working together")
+
+    course = Course("Python Basics")
+    course.add_student(Student("Ada", current_lesson=13))
+    course.add_student(Student("Grace", current_lesson=10))
+
+    print(f"Course: {course.title}")
+    course.list_students()
+
+
+def main():
+    """Run each lesson section in order."""
+    inspect_a_builtin_class()
+    create_custom_objects()
+    compose_objects()
+
+
+if __name__ == "__main__":
+    main()
