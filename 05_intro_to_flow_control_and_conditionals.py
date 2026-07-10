@@ -1,70 +1,90 @@
-# coding=utf-8
-"""
-Flow Control and Conditionals: if, elif, else
+# coding: utf-8
+"""Lesson 05: Flow Control and Conditionals.
 
-Flow control statements are used to control the flow of a program.
-This simply means that flow control statements allow us to determine which code blocks are executed.
-It allows us to build more complex programs by allowing us to make decisions based on certain conditions.
-Flow control statements are used to determine the order in which statements are executed in a program.
-The often read like English sentences:
-    - If (this condition is true): do this.
-    - If (this condition is not true): do this.
-    - If (this condition is not true) and (this other condition is true): do this.
-    - If none of the above conditions are true, do this.
-These statements are written as follows: (Note the indentation)
+Conditionals let a program choose which code to run.
 
-if condition_1:
-    code_to_execute_if_condition_1_is_true
-elif condition_2:
-    code_to_execute_if_condition_2_is_true
-else:
-    code_to_execute_if_no_conditions_are_true
+The most common conditional keywords are:
 
-These conditions can be any expression that evaluates to a boolean value (True or False).
-They can also be as simple or as complicated as you need them to be.
-For example:
-if condition_1 and condition_2 and condition_3: # All conditions must be True
-    code_to_execute_if_all_conditions_are_true
-elif condition_1 or condition_2 or condition_3: # At least one condition must be True
-    code_to_execute_if_any_conditions_are_true
-else:                                           # If none of the above conditions are True
-    code_to_execute_if_no_conditions_are_true
-else is used primarily as a catch-all for any conditions that are not covered by the if or elif statements.
+- `if`: run this block when the condition is true
+- `elif`: check another condition when earlier conditions were false
+- `else`: run this block when none of the earlier conditions were true
 """
 
-# Example time:
-is_true = True
-is_false = False
-string_1 = "Hello"
-string_2 = "Hello"
-if is_true:
-    print("This will print because the variable is True.")
-else:
-    print("This will not print because the variable is True.")
 
-if is_false:
-    print("This will not print because the variable is False.")
-elif not is_false:
-    print("This will print because the variable is False.")
-# else:  <-- You do not always need to include an else statement.
+def show_section(title):
+    """Print a consistent section heading for the lesson output."""
+    print(f"\n{title}")
+    print("-" * len(title))
 
-if string_1 == string_2:
-    print("The two strings are equal.")
-elif string_1 == "Test String":
-    print("string_1 is the same as 'test string'.")
-else:
-    print("If none of the above conditions is true, print this line.")
 
-# We can also nest if statements inside of other if statements: (Note the indentation)
-if is_true:
-    if string_1 == string_2:
-        print("The two strings are equal.")
+def check_a_single_condition():
+    """Use if and else to choose between two paths."""
+    show_section("Single condition")
+
+    temperature = 72
+
+    if temperature >= 70:
+        print("It is warm enough to go outside.")
     else:
-        print("The two strings are not equal.")
-        
-# We can also use the 'and' and 'or' operators to combine conditions:
-if is_true and string_1 == string_2:
-    print("The variable is True and the two strings are equal.")
+        print("Bring a jacket.")
 
-# For more information on flow control and conditionals, see the Python documentation:
-# https://docs.python.org/3/tutorial/controlflow.html
+
+def check_multiple_conditions():
+    """Use if, elif, and else to choose between several paths."""
+    show_section("Multiple conditions")
+
+    score = 88
+
+    if score >= 90:
+        grade = "A"
+    elif score >= 80:
+        grade = "B"
+    elif score >= 70:
+        grade = "C"
+    else:
+        grade = "Needs more practice"
+
+    print(f"Score: {score}")
+    print(f"Grade: {grade}")
+
+
+def combine_conditions():
+    """Use and, or, and not with conditionals."""
+    show_section("Combining conditions")
+
+    has_username = True
+    has_password = True
+    is_locked = False
+
+    if has_username and has_password and not is_locked:
+        print("Login can continue.")
+    else:
+        print("Login cannot continue.")
+
+
+def nest_conditions():
+    """Show a simple nested conditional."""
+    show_section("Nested conditions")
+
+    is_logged_in = True
+    is_admin = False
+
+    if is_logged_in:
+        if is_admin:
+            print("Show the admin dashboard.")
+        else:
+            print("Show the student dashboard.")
+    else:
+        print("Ask the user to log in.")
+
+
+def main():
+    """Run each lesson section in order."""
+    check_a_single_condition()
+    check_multiple_conditions()
+    combine_conditions()
+    nest_conditions()
+
+
+if __name__ == "__main__":
+    main()

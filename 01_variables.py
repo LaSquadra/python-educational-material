@@ -1,43 +1,68 @@
-# coding=utf-8
-"""
-Variables:
+# coding: utf-8
+"""Lesson 01: Variables.
 
-Variables are used to store data.
-A variable is a container that holds data which can be access, used, and manipulated in a program.
-In Python, variables a dynamically typed, meaning that they can be assigned different types of data.
-Unlike some other programming languages, you do not need to declare the variable's type.
+Variables store values so you can reuse them later in a program.
 
-Convention:
-- Variable names should be meaningful and descriptive.
-    - For example: if you are storing a person's age, you could name the variable 'age'.
-- Variable names should be written in lowercase.
-    - For example: 'age' instead of 'Age'.
-- Variable names should not start with a number.
-    - For example: 'age_1' instead of '1_age'.
-- Variable names should be separated by underscores.
-    - For example: 'first_name' instead of 'firstname'.
+Good variable names are:
+
+- descriptive: `student_age` is clearer than `x`
+- lowercase: `first_name`, not `FirstName`
+- separated with underscores: `favorite_color`
+- not started with a number: `lesson_1`, not `1_lesson`
+
+Run this file to see variables created, printed, and reassigned.
 """
 
-# We will explore using variables below.
-example_string_variable = "This is a string."
-example_string_variable_2 = "This is another string."
-example_integer_variable = 10
 
-"""
-We will cover different data types in the next few sections but the above two variables
-contain examples of two of the most basic types: strings and integers
-"""
+def show_section(title):
+    """Print a consistent section heading for the lesson output."""
+    print(f"\n{title}")
+    print("-" * len(title))
 
-# You can have the program display the value of a variable using the print() function.
-"""
-print(example_string_variable)
-print(example_string_variable_2)
-print(example_integer_variable)
-"""
-print(example_string_variable)
-print(example_integer_variable)
 
-# You can also change the value of a variable.
-example_integer_variable = 20
-print(example_integer_variable)
+def create_variables():
+    """Create variables that store different kinds of values."""
+    show_section("Creating variables")
 
+    first_name = "Ada"
+    current_lesson = 1
+    is_learning_python = True
+
+    print(f"Name: {first_name}")
+    print(f"Current lesson: {current_lesson}")
+    print(f"Learning Python? {is_learning_python}")
+
+
+def reassign_variables():
+    """Show that a variable can point to a new value later."""
+    show_section("Reassigning variables")
+
+    score = 80
+    print(f"Starting score: {score}")
+
+    score = 95
+    print(f"Updated score: {score}")
+
+
+def inspect_variable_types():
+    """Use type() to inspect the kind of data stored in a variable."""
+    show_section("Inspecting types")
+
+    course_name = "Python Basics"
+    lesson_count = 13
+    average_score = 91.5
+
+    print(f"{course_name!r} is a {type(course_name)}")
+    print(f"{lesson_count!r} is a {type(lesson_count)}")
+    print(f"{average_score!r} is a {type(average_score)}")
+
+
+def main():
+    """Run each lesson section in order."""
+    create_variables()
+    reassign_variables()
+    inspect_variable_types()
+
+
+if __name__ == "__main__":
+    main()

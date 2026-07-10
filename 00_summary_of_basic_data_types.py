@@ -1,161 +1,137 @@
 # coding: utf-8
-"""
-Basic Data Types:
+"""Lesson 00: Summary of Basic Data Types.
 
- - String str()
- - Integer int()
- - Float float()
- - Bool bool()
- - List lst()
- - Set set()
- - Dictionary dict()
-"""
+This lesson introduces the data types students will see throughout the course:
 
-# COMMENTS:
+- Strings: text values, written with quotes.
+- Integers: whole numbers.
+- Floats: numbers with decimal points.
+- Booleans: True or False values.
+- Lists: ordered, changeable collections.
+- Tuples: ordered, unchangeable collections.
+- Sets: unordered collections of unique values.
+- Dictionaries: key-value collections.
 
-#  In Python, there are things called "Comments".
-#  Comments are lines within the file that are skipped during the execution of the file.
-#  While comments are not necessarily a "data type" they are very common to see in code and are very helpful to use.
-#  Comments exist to allow the author to explain and document what a section of code is doing
-#  They are also used to explain why a section of code is written the way it is (ex: accounting for odd behavior)
-#  In most IDEs, comments will appear grey in color.
-
-
-#  The following block of code is wrapped in triple quotes: """some string here"""
-#  This is an example of Documentation String (doc string for short)
-"""
-In Python there are a large variety of "Data Types" that you may come across.
-The primary data types that most everything else is built off of are listed above.
-In this section we will explain what they are, how they are different and when you would use them.
+Run this file to see small examples of each type.
 """
 
 
-# STRINGS:
-"""
-The following lines are wrapped in either single or double quotes
-There is no right or wrong one to use.  Just make sure you are consistent.
-"The first section will cover strings."
-"Strings are ANYTHING wrapped inside quotes: 'this is a string' "  # Note that this line uses both single and double
-'Strings can be wrapped in either single or double quotes. Just be consistent.'
-'In most IDEs, strings will appear green.'
-'Strings are unique in the fact that you can convert every single other data type into a string'
-"Strings are 'iterable' meaning they can be accessed (indexed) one character at a time"
-"Python starts counting from '0' (ex. 0, 1, 2, 3...)"
-"""
+def show_section(title):
+    """Print a consistent section heading for the lesson output."""
+    print(f"\n{title}")
+    print("-" * len(title))
 
 
-# INTEGERS & FLOATS:
-"""
-What are Integers?
- - Integers are whole numbers: 0, 1, 2, 2000000, -1, 700, etc.
-What are Floats?
- - Floats are numbers that contain a decimal point: 0.1, 1.6, 2.1, 23455348.9, -1.3, etc.)
-Integers and Floats are mutable.
- - This means the data can be altered without needing to create a new object in memory to store it.
-When would you use Integers and/or Floats?
- - Integers and Floats can be used in mathematical operations.
-     - The mathematical operators are as follows:
-         - Addition: +         (1 + 2 = 3)
-         - Subtraction: -      (1 - 2 = -1)
-         - Multiplication: *   (3 * 3 = 9)
-         - Division: /         (3 / 3 = 1)
-         - Exponents: **       (5 ** 4 = 625)
-         - Floor division: //  (5 // 4 = 1) # This gives only the whole number.  (5 / 4 would return 1.25)
-         - Modulus: %          (5 % 4 = 1)
- -  Math in Python follows all the same order of operations one would expect.
-"""
+def introduce_comments():
+    """Explain comments and docstrings."""
+    show_section("Comments and docstrings")
+
+    # This is a comment. Python ignores comments when the program runs.
+    print("Comments start with # and help explain code to humans.")
+    print("Docstrings use triple quotes and document files, classes, or functions.")
 
 
-# BOOLEANS bool()
-"""
-What are Booleans?
- - Booleans can only ever be one of two values: True or False (Like '0' and '1' in binary)
- - Booleans exemplify the concept of 'truthy' and 'falsy'
-     - Any variable or object that contains data is considered 'truthy'
-     - Any variable or object that is 'empty' (examples: "" or [] or {} or 0)
-When would you use Boolean values?
- - Booleans are frequently used in 'flow control' (the logic of the program)
-"""
+def introduce_strings():
+    """Show how strings store text."""
+    show_section("Strings")
+
+    first_name = "Ada"
+    greeting = "Hello, " + first_name
+
+    print(greeting)
+    print("A string can use single quotes or double quotes.")
+    print(f"The first character in {first_name!r} is {first_name[0]!r}.")
+    print("Python starts counting indexes at 0.")
 
 
-# LISTS lst()
-"""
-What are Lists?
- - Lists are essentially variables that contain other variables.
- - Lists are created but using the [] (opening and closing Square Brackets) and placing data inside, separated by a comma
-     - my_list = [0, 1, 2, 3, '4', 'some string here', [...], (...), {...}]
- - Lists are used to hold various pieces of data and do not require the data types to all be the same.
- - Lists are immutable.  This means that you cannot change a list.
-     - When you attempt to change a list, it actually destroys the old list (in memory) and creates a new one.
- - Items within Lists are accessed by indexes.
-When would you use Lists?
- - Lists are used when you need to store multiple pieces of data for any reason.
- - Indexing lists:
-     - my_list = [0, 1, 2, 3, '4', 'some string here']
-     - first_value = my_list[0] <-- this will return the zeroth index of the list
-     - fifth_value = my_list[4] <-- This will return the 5th value in the list (counting from 0, 1, 2, 3, 4, etc.)
-     - last_value = my_list[-1] <-- This will count from the end of the list
-"""
+def introduce_numbers():
+    """Show how integers and floats store numbers."""
+    show_section("Integers and floats")
+
+    student_count = 12
+    average_score = 91.5
+
+    print(f"Integer example: {student_count}")
+    print(f"Float example: {average_score}")
+    print(f"Addition: 3 + 2 = {3 + 2}")
+    print(f"Division: 5 / 2 = {5 / 2}")
+    print(f"Floor division: 5 // 2 = {5 // 2}")
+    print(f"Modulus: 5 % 2 = {5 % 2}")
 
 
-# SET set()
-"""
-What are Sets?
- - Sets are similar to lists but are created with the () (opening and closing Parentheses)
- - Sets are special in that they can contain any number of different items but only one of any specific item.
-     - EXAMPLE: my_set = ('a', 'b', 'c', 'd', 'e')  it cannot contain ('a', 'b', 'c', 'd', 'e', 'a', 'a', 'b')
-     - if you create a list and convert it to a set, it will automatically remove any duplicate values.
-     - NOTE: Integers and strings are not considered the same so both the integer 5 and string '5' can be inside a set.
- - Sets are immutable.  This means that you cannot change a list.
- - Items within sets are accessed by indexes
-When would you use Sets?
- - Sets are used with you need to maintain the the integrity of the data
- OR
- - When you want to ensure you do not have duplicates of any values.
- - Sets are indexed in the same way as lists:
-     - my_set = ('a', 'b', 'c', 'd', 'e')
-     - first_value = my_set[0] <-- This would return 'a'
-     - fifth_value = my_set[4] <-- This would return 'e'
-     - last_value = my_set[-1] <-- This would return 'e'
- """
- 
- 
-# DICTIONARIES dict()
-"""
-What are Dictionaries?
- - Dictionaries are created by using {} (opening and closing Curly Braces)
-     - Key:Value pairs are created with the key ALWAYS being a string and linking the value with a ':'
-     - The pairs are then separated by commas. (see below)
-     - EXAMPLE: my_dict = {'key_1': 'value to store', 'key_2': 'other data here'}
- - Dictionaries are a more organized way of storing data.
- - Dictionaries are mutable and can be modified at any point.
- - Dictionaries are accessed by Keys as follows:
-     - my_dict = {'key_1': 'value to store', 'key_2': 'other data here'}
-     - first_item = my_dict['key_1'] <-- This will evaluate to 'value to store' from the example above
- - You can also assign values in the same way (either using an existing key or creating a new one):
-     - my_dict['key_3'] = "even more data here"
-     - Now 'my_dict' contains the following data: {'key_1': 'value to store', 'key_2': 'other data here', 'key_3': 'even more data here'}
- - NOTE: dictionaries that contain many values are often written across multiple lines to be easier to read:
-     - EXAMPLE:
-         - my_dict = {
-                'key_1': 'value to store',
-                'key_2': 'other data here',
-                'key_3': 'even more data here'
-                }
-When would you use Dictionaries?
- - Dictionaries are frequently used when storing data about certain things.
-     - This could be attributes of an animal:
-         - dog_attributes = {
-                     'number_of_legs' = 4,
-                     'voice_type = 'Bark',
-                     'cuteness_value' = 10
-                     }
-         - cat_attributes = {
-                    'number_of_legs' = 4,
-                    'voice_type = 'Meow',
-                    'cuteness_value' = 9
-                    }
-     These values would be accessed as such:
-         - dog_voice = dog_attributes['voice_type'] <-- this will be 'Bark'
-         - cat_voice = cat_attributes['voice_type'] <-- this will be 'Meow'
-"""
+def introduce_booleans():
+    """Show how booleans represent yes/no or true/false ideas."""
+    show_section("Booleans")
+
+    is_logged_in = True
+    has_missing_homework = False
+
+    print(f"Is logged in? {is_logged_in}")
+    print(f"Has missing homework? {has_missing_homework}")
+    print(f"Is 10 greater than 3? {10 > 3}")
+
+
+def introduce_lists():
+    """Show how lists store ordered, changeable data."""
+    show_section("Lists")
+
+    favorite_languages = ["Python", "JavaScript", "SQL"]
+    favorite_languages.append("HTML")
+
+    print(favorite_languages)
+    print(f"First item: {favorite_languages[0]}")
+    print(f"Last item: {favorite_languages[-1]}")
+
+
+def introduce_tuples():
+    """Show how tuples store ordered data that should not change."""
+    show_section("Tuples")
+
+    screen_size = (1920, 1080)
+
+    print(f"Screen size: {screen_size}")
+    print(f"Width: {screen_size[0]}")
+    print(f"Height: {screen_size[1]}")
+
+
+def introduce_sets():
+    """Show how sets store unique values."""
+    show_section("Sets")
+
+    submitted_names = {"Avery", "Blake", "Avery", "Casey"}
+
+    print(submitted_names)
+    print("The duplicate 'Avery' appears only once.")
+    print("Sets are useful when each value should be unique.")
+
+
+def introduce_dictionaries():
+    """Show how dictionaries connect keys to values."""
+    show_section("Dictionaries")
+
+    student = {
+        "first_name": "Ada",
+        "last_name": "Lovelace",
+        "course": "Python Basics",
+        "current_lesson": 0,
+    }
+
+    print(student)
+    print(f"Student name: {student['first_name']} {student['last_name']}")
+    print(f"Course: {student['course']}")
+
+
+def main():
+    """Run each lesson section in order."""
+    introduce_comments()
+    introduce_strings()
+    introduce_numbers()
+    introduce_booleans()
+    introduce_lists()
+    introduce_tuples()
+    introduce_sets()
+    introduce_dictionaries()
+
+
+if __name__ == "__main__":
+    main()
