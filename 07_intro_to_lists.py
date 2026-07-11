@@ -46,6 +46,9 @@ def change_lists():
     print(f"Popped task: {completed_task}")
     print(f"Remaining tasks: {tasks}")
 
+    tasks.extend(["reflect", "rest"])
+    print(f"After extend: {tasks}")
+
 
 def sort_and_copy_lists():
     """Sort a list and create a real copy."""
@@ -59,6 +62,9 @@ def sort_and_copy_lists():
     print(f"Sorted scores: {scores}")
     print(f"Copied before sort: {copied_scores}")
 
+    scores.reverse()
+    print(f"Reversed scores: {scores}")
+
 
 def slice_lists():
     """Use slices to access part of a list."""
@@ -71,12 +77,25 @@ def slice_lists():
     print(f"Reversed letters: {letters[::-1]}")
 
 
+def preview_more_list_methods():
+    """List more common list methods to explore."""
+    show_section("More list methods to explore")
+
+    colors = ["red", "blue", "green", "blue"]
+
+    print(f"colors: {colors}")
+    print(f"colors.index('blue') -> {colors.index('blue')}")
+    print(f"colors.count('blue') -> {colors.count('blue')}")
+    print("Other useful methods: .clear(), .extend(), .reverse()")
+
+
 def main():
     """Run each lesson section in order."""
     create_and_index_lists()
     change_lists()
     sort_and_copy_lists()
     slice_lists()
+    preview_more_list_methods()
 
 
 if __name__ == "__main__":

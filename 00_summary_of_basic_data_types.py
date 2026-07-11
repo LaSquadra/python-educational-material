@@ -13,6 +13,14 @@ This lesson introduces the data types students will see throughout the course:
 - Dictionaries: key-value collections.
 
 Run this file to see small examples of each type.
+
+This first file is a preview. It uses a few Python ideas, such as functions,
+f-strings, indexes, and the `if __name__ == "__main__":` guard, before the
+course teaches them in detail. For now, focus on what each data type stores.
+
+Many data types also have useful methods. A method is an action attached to a
+value, such as `"hello".upper()` or `names.append("Ada")`. Later lessons show
+these in more detail, but it is good to know Python gives each type a toolbox.
 """
 
 
@@ -87,11 +95,12 @@ def introduce_tuples():
     """Show how tuples store ordered data that should not change."""
     show_section("Tuples")
 
-    screen_size = (1920, 1080)
+    screen_size = (1920, 1080, 1080)
 
     print(f"Screen size: {screen_size}")
     print(f"Width: {screen_size[0]}")
     print(f"Height: {screen_size[1]}")
+    print(f"How many 1080 values? {screen_size.count(1080)}")
 
 
 def introduce_sets():
@@ -103,6 +112,9 @@ def introduce_sets():
     print(submitted_names)
     print("The duplicate 'Avery' appears only once.")
     print("Sets are useful when each value should be unique.")
+    submitted_names.add("Dakota")
+    print(f"After adding Dakota: {submitted_names}")
+    print(f"Common names: {submitted_names.intersection({'Avery', 'Dakota', 'Emery'})}")
 
 
 def introduce_dictionaries():
@@ -121,6 +133,18 @@ def introduce_dictionaries():
     print(f"Course: {student['course']}")
 
 
+def preview_type_toolboxes():
+    """Preview common methods students can explore later."""
+    show_section("Type toolboxes to explore")
+
+    print("Strings: .upper(), .lower(), .strip(), .replace(), .split()")
+    print("Lists: .append(), .insert(), .remove(), .pop(), .sort(), .copy()")
+    print("Tuples: .count(), .index()")
+    print("Sets: .add(), .remove(), .discard(), .union(), .intersection()")
+    print("Dictionaries: .keys(), .values(), .items(), .get(), .update(), .pop()")
+    print("Numbers: operators plus helpers like abs(), round(), min(), and max()")
+
+
 def main():
     """Run each lesson section in order."""
     introduce_comments()
@@ -131,6 +155,7 @@ def main():
     introduce_tuples()
     introduce_sets()
     introduce_dictionaries()
+    preview_type_toolboxes()
 
 
 if __name__ == "__main__":

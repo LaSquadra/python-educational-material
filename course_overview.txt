@@ -48,14 +48,88 @@ Python Overview:
     - Introduce List (Class specific) Methods
     - How to iterate through them
     - Slicing & Indexing
-8) Intro to Loops
+8) Intro to Tuples and Sets
+    - Creating and indexing tuples
+    - Tuple immutability
+    - Tuple methods
+    - Creating and updating sets
+    - Set uniqueness and membership
+    - Set operations
+9) Intro to Loops
     - For Loops
     - While Loops
     - How to break out of a loop
-9) Intro to Dictionaries
-10) Intro to Functions
-11) Intro to Imports
-    - What is "pip"
-12) Intro to File Manipulation
-13) Intro to Classes
+10) Intro to Dictionaries
+11) Intro to Functions
+12) Intro to Imports and Modules
+    - Importing a whole module
+    - Importing a specific name from a module
+    - Standard library modules
+    - The __name__ == "__main__" guard
+    - How modules differ from classes
+13) Intro to File Manipulation
+14) Intro to Classes
+15) Intro to Errors and Exceptions
+    - Common exceptions
+    - try | except | else | finally
+    - Raising clear errors
+16) Intro to Packages and Virtual Environments
+    - What pip is
+    - What virtual environments are
+    - Installing third-party packages
+    - Tracking dependencies with requirements.txt
+17) Intro to JSON
+    - JSON strings
+    - Python dictionaries and lists
+    - Reading and writing JSON data
+18) Intro to API Calls
+    - URLs, requests, and responses
+    - Status codes and headers
+    - JSON response bodies
+    - API keys
+19) Intro to Environment Variables
+    - Reading values from the environment
+    - Keeping secrets out of source code
+    - Using API keys safely
+20) Intro to Multithreading
+    - Threads for I/O-style work
+    - Starting and joining threads
+    - Shared data and locks
+21) Intro to Multiprocessing
+    - Processes for CPU-style work
+    - Process pools
+    - Windows __main__ guard
+22) Intro to Ollama
+    - Running local language models
+    - Pulling models
+    - Calling the local Ollama API
+23) Intro to the OpenAI API
+    - OpenAI API keys
+    - Creating text responses
+    - Instructions and inputs
+24) Building a Chatbot
+    - Conversation history
+    - Provider selection
+    - Command-line chat loops
+25) Intro to Embeddings
+    - Vectors
+    - Similarity search
+    - OpenAI embeddings
+26) Intro to RAG
+    - Documents
+    - Chunking
+    - Retrieval
+    - Generating answers from retrieved context
+27) Intro to AI Agents
+    - Instructions
+    - Tools
+    - Agent loops
+    - Local tool execution
+Optional) Data Type Design and Performance
+    - Choosing data types for readability, memory, and speed
+    - Memory footprint comparisons
+    - List vs set membership checks
+    - Dictionary lookups vs scanning lists
+    - Mutability and design tradeoffs
+    - Measuring before optimizing
 Final Step: Create a project
