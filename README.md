@@ -29,8 +29,16 @@ https://www.python.org/downloads/
 
 After installation, confirm Python is available:
 
+Windows PowerShell:
+
 ```powershell
 py -3 --version
+```
+
+macOS/Linux terminal:
+
+```bash
+python3 --version
 ```
 
 Choose an editor or IDE:
@@ -54,14 +62,30 @@ skip cleanly if the tools, packages, services, or API keys are not configured.
 
 Run a lesson from the repository folder:
 
+Windows PowerShell:
+
 ```powershell
 py -3 00_summary_of_basic_data_types.py
 ```
 
+macOS/Linux terminal:
+
+```bash
+python3 00_summary_of_basic_data_types.py
+```
+
 Run the practice workbook:
+
+Windows PowerShell:
 
 ```powershell
 py -3 practice_problems.py
+```
+
+macOS/Linux terminal:
+
+```bash
+python3 practice_problems.py
 ```
 
 ## Course Path
@@ -95,9 +119,18 @@ ollama run llama3.2
 
 For OpenAI API examples:
 
+Windows PowerShell:
+
 ```powershell
 python -m pip install openai
 $env:OPENAI_API_KEY = "your-api-key-here"
+```
+
+macOS/Linux terminal:
+
+```bash
+python3 -m pip install openai
+export OPENAI_API_KEY="your-api-key-here"
 ```
 
 ## Notes For Students
