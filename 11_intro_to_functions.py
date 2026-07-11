@@ -1,5 +1,5 @@
 # coding: utf-8
-"""Lesson 10: Functions.
+"""Lesson 11: Functions.
 
 Functions are reusable blocks of code. They help you name a task, avoid
 duplicating logic, and organize a program into smaller pieces.
@@ -33,23 +33,12 @@ def add_numbers(number_1, number_2):
     return number_1 + number_2
 
 
-def add_numeric_values(values):
-    """Add numbers and numeric strings from a list.
-
-    Args:
-        values: A list that may contain integers, floats, strings, or other
-            values.
-
-    Returns:
-        The total of all integers, floats, and numeric strings in `values`.
-    """
+def total_scores(scores):
+    """Return the total of a list of scores."""
     total = 0
 
-    for value in values:
-        if isinstance(value, (int, float)):
-            total += value
-        elif isinstance(value, str) and value.isdigit():
-            total += float(value)
+    for score in scores:
+        total += score
 
     return total
 
@@ -67,15 +56,15 @@ def demonstrate_reusable_logic():
     """Use one function with multiple inputs."""
     show_section("Reusable logic")
 
-    first_values = [2, 2, 4, 5, 7, 1, 0, 3, 4, 1, 5]
-    second_values = [1, 5, 7, 2, "4", 1, 8, 2, "9", 0, 4.1, 8]
+    first_scores = [2, 2, 4, 5, 7, 1, 0, 3, 4, 1, 5]
+    second_scores = [1, 5, 7, 2, 4, 1, 8, 2, 9, 0, 4, 8]
 
-    first_total = add_numeric_values(first_values)
-    second_total = add_numeric_values(second_values)
+    first_total = total_scores(first_scores)
+    second_total = total_scores(second_scores)
 
     print(f"First total: {first_total}")
     print(f"Second total: {second_total}")
-    print(f"Combined total: {add_numeric_values([first_total, second_total])}")
+    print(f"Combined total: {add_numbers(first_total, second_total)}")
 
 
 def main():

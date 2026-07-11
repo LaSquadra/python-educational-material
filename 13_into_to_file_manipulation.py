@@ -1,5 +1,5 @@
 # coding: utf-8
-"""Lesson 12: File Manipulation.
+"""Lesson 13: File Manipulation.
 
 Python can read from and write to files. The `pathlib` module helps build file
 paths in a way that works across operating systems.

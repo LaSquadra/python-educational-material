@@ -13,6 +13,30 @@ Suggested workflow:
 
 
 # ---------------------------------------------------------------------------
+# Basic Data Types
+# ---------------------------------------------------------------------------
+"""Practice 00: Basic data types.
+
+- Create one example of each basic data type:
+  - string
+  - integer
+  - float
+  - boolean
+  - list
+  - tuple
+  - set
+  - dictionary
+- Print each value.
+- Print the type of each value with `type()`.
+- Try at least one method or helper from the lesson's toolbox preview.
+- Bonus: choose two data types and explain, in comments, what kind of
+  information each one is useful for storing.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
 # Variables
 # ---------------------------------------------------------------------------
 """Practice 01: Variables.
@@ -38,6 +62,8 @@ Suggested workflow:
 - Print the first character in your name.
 - Print your initials.
 - Print your name in reverse.
+- Try at least three string methods, such as `.upper()`, `.strip()`,
+  `.replace()`, `.count()`, `.startswith()`, or `.endswith()`.
 """
 
 # Write your solution here.
@@ -53,6 +79,7 @@ Suggested workflow:
 - Print both values.
 - Convert each value with `bool()` and print the result.
 - Create an empty string and print `bool(empty_string)`.
+- Use `and`, `or`, and `not` in at least one example each.
 """
 
 # Write your solution here.
@@ -78,11 +105,13 @@ Suggested workflow:
 # ---------------------------------------------------------------------------
 """Practice 05: Flow control and conditionals.
 
-- Create three variables that store different strings.
-- Create a number variable.
-- Use `if` and `else` to check whether the length of the first string equals
-  your number.
-- Bonus: add an `elif` branch that checks another string.
+- Create a number variable that stores a temperature.
+- Use `if` and `else` to print one message when the temperature is warm enough
+  and another message when it is not.
+- Create a score variable.
+- Use `if`, `elif`, and `else` to print a grade or feedback message.
+- Bonus: create boolean variables and combine them with `and`, `or`, or `not`
+  inside a conditional.
 """
 
 # Write your solution here.
@@ -96,6 +125,8 @@ Suggested workflow:
 - Create two number variables.
 - Calculate the area of a right triangle using those values.
 - Calculate the volume of a rectangular box where height is half the width.
+- Try at least two number helpers, such as `abs()`, `round()`, `min()`,
+  `max()`, or `sum()`.
 - Bonus: automate a calculation you use in daily life.
 """
 
@@ -108,11 +139,42 @@ Suggested workflow:
 """Practice 07: Lists.
 
 - Create a list containing: `1`, `2`, `"a"`, `"b"`, `9`, `"A"`.
-- Practice indexing each value.
+- Print the first value.
+- Print the last value.
 - Change the fourth value to `"I am a new value!"`.
-- Multiply the second value by `2`.
-- Multiply the third value by `2` and compare the result.
+- Use `.append()` to add one new value.
+- Use `.insert()` to add one new value near the beginning.
+- Use `.remove()` or `.pop()` to remove one value.
+- Sort a list of numbers.
 - Use `.copy()` to create an independent copy of a list.
+- Try at least two more list methods, such as `.extend()`, `.reverse()`,
+  `.index()`, or `.count()`.
+- Print a slice of the list.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Tuples and Sets
+# ---------------------------------------------------------------------------
+"""Practice 08: Tuples and sets.
+
+Tuples:
+- Create a tuple that stores three related values, such as a student record,
+  screen size, or RGB color.
+- Print the whole tuple.
+- Print one value by index.
+- Use `.count()` or `.index()` on a tuple.
+- Add a comment explaining why a tuple might be better than a list here.
+
+Sets:
+- Create a set with at least one duplicate value.
+- Print the set and notice that duplicates are removed.
+- Use `.add()` to add one value.
+- Use `.discard()` to remove one value safely.
+- Create a second set and use `.union()`, `.intersection()`, or `.difference()`.
+- Add a comment explaining when a set might be useful.
 """
 
 # Write your solution here.
@@ -121,18 +183,21 @@ Suggested workflow:
 # ---------------------------------------------------------------------------
 # Loops
 # ---------------------------------------------------------------------------
-"""Practice 08: Loops.
+"""Practice 09: Loops.
 
 For loop:
 - Create a list containing `1` through `7`.
 - Print each value with a `for` loop.
-- Add charge-level logic that prints different messages below, at, and above
-  your chosen charge value.
+- Create a string and print each character with a `for` loop.
 
 While loop:
-- Start with two numbers between `5` and `10`.
-- Keep adding the two most recent values until the total reaches 100,000,000.
-- Print how many loop iterations it took.
+- Start a counter at `0`.
+- Use a `while` loop to print the counter while it is less than `5`.
+- Increase the counter by `1` each time through the loop.
+
+Break and continue:
+- Use `break` to stop a loop when it finds a target number.
+- Use `continue` to skip numbers that do not match a target number.
 """
 
 # Write your solution here.
@@ -141,13 +206,19 @@ While loop:
 # ---------------------------------------------------------------------------
 # Dictionaries
 # ---------------------------------------------------------------------------
-"""Practice 09: Dictionaries.
+"""Practice 10: Dictionaries.
 
-- Create three dictionaries that simulate phone book contacts.
-- Each contact should include name, age, phone number, and address.
-- Add the dictionaries to a list called `contact_list`.
-- Search the list and print the name of the oldest person.
-- Bonus: solve it again with a dictionary of dictionaries.
+- Create a dictionary that stores information about one student.
+- Include keys for name, age, and course.
+- Print the whole dictionary.
+- Print one value by using its key.
+- Add a new key-value pair.
+- Change the value of one existing key.
+- Use `.get()` to read a value with a fallback.
+- Use `.keys()` or `.values()` to inspect the dictionary.
+- Loop through the dictionary with `.items()` and print each key and value.
+- Try one more dictionary method, such as `.update()`, `.pop()`, or `.copy()`.
+- Bonus: create a dictionary that stores two student dictionaries inside it.
 """
 
 # Write your solution here.
@@ -156,11 +227,12 @@ While loop:
 # ---------------------------------------------------------------------------
 # Functions
 # ---------------------------------------------------------------------------
-"""Practice 10: Functions.
+"""Practice 11: Functions.
 
 - Write a function that accepts a name and returns a greeting.
-- Write a function that accepts two numbers and returns their product.
-- Write a function that accepts a list of numbers and returns their average.
+- Write a function that accepts a name, age, and hobby, then returns a sentence.
+- Write a function that accepts two numbers and returns their sum.
+- Write a function that accepts a list of numbers and returns the total.
 """
 
 # Write your solution here.
@@ -169,12 +241,15 @@ While loop:
 # ---------------------------------------------------------------------------
 # Imports
 # ---------------------------------------------------------------------------
-"""Practice 11: Imports.
+"""Practice 12: Imports and modules.
 
 - Import `Path` from `pathlib`.
 - Print the current working directory.
 - Import `math`.
 - Use `math.pi` to calculate the area of a circle.
+- Print the value of `__name__`.
+- Add an `if __name__ == "__main__":` guard that calls a `main()` function.
+- Add one comment explaining the difference between a module and a class.
 """
 
 # Write your solution here.
@@ -183,7 +258,7 @@ While loop:
 # ---------------------------------------------------------------------------
 # File Manipulation
 # ---------------------------------------------------------------------------
-"""Practice 12: File manipulation.
+"""Practice 13: File manipulation.
 
 - Create a file called `student_notes.txt`.
 - Write three lines of notes into it.
@@ -197,7 +272,7 @@ While loop:
 # ---------------------------------------------------------------------------
 # Classes
 # ---------------------------------------------------------------------------
-"""Practice 13: Classes.
+"""Practice 14: Classes.
 
 - Create a `Book` class.
 - Add `title`, `author`, and `page_count` attributes.
@@ -209,20 +284,249 @@ While loop:
 
 
 # ---------------------------------------------------------------------------
+# Errors and Exceptions
+# ---------------------------------------------------------------------------
+"""Practice 15: Errors and exceptions.
+
+- Write a function that divides two numbers.
+- Use `try` and `except` to handle division by zero.
+- Add an `else` block that prints the result when division succeeds.
+- Add a `finally` block that prints a message after the attempt.
+- Write another function that converts text to an integer and handles
+  `ValueError`.
+- Bonus: raise a `ValueError` when a list of scores is empty.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Packages and Virtual Environments
+# ---------------------------------------------------------------------------
+"""Practice 16: Packages and virtual environments.
+
+- Print the command to create a virtual environment.
+- Print the command to activate it in Windows PowerShell.
+- Print the command to install one package with `python -m pip`.
+- Create a string that looks like a small `requirements.txt` file.
+- Print the command to install packages from `requirements.txt`.
+- Add a comment explaining why virtual environments are useful.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# JSON
+# ---------------------------------------------------------------------------
+"""Practice 17: JSON.
+
+- Import `json`.
+- Create a Python dictionary that stores information about a student.
+- Convert the dictionary to a JSON string with `json.dumps()`.
+- Convert a JSON string back to Python data with `json.loads()`.
+- Write the student dictionary to a `.json` file.
+- Read the `.json` file back and print one value from it.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# API Calls
+# ---------------------------------------------------------------------------
+"""Practice 18: API calls.
+
+- Create variables for a sample API URL, status code, headers, and JSON body.
+- Print the request URL and an example request header.
+- Print the sample status code.
+- Parse the JSON body with `json.loads()`.
+- Print one value from the parsed response.
+- Add a comment explaining why API keys should be kept secret.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Environment Variables
+# ---------------------------------------------------------------------------
+"""Practice 19: Environment variables.
+
+- Import `os`.
+- Read one common environment variable with `os.environ.get()`.
+- Read an optional setting and provide a fallback value.
+- Check whether a fake API key environment variable is set.
+- Print shell examples for setting an environment variable.
+- Do not print a real secret value.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Multithreading
+# ---------------------------------------------------------------------------
+"""Practice 20: Multithreading.
+
+- Import `threading`.
+- Write a small function that accepts a name and prints a message.
+- Create at least two `threading.Thread` objects that call that function.
+- Start each thread.
+- Use `.join()` to wait for each thread to finish.
+- Bonus: use a `threading.Lock` while updating a shared counter.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Multiprocessing
+# ---------------------------------------------------------------------------
+"""Practice 21: Multiprocessing.
+
+- Import `multiprocessing`.
+- Write a function that squares a number.
+- Create a `multiprocessing.Process` that calls a function.
+- Start the process and join it.
+- Add a comment explaining why multiprocessing code belongs under the
+  `if __name__ == "__main__":` guard on Windows.
+- Bonus: use `ProcessPoolExecutor` to square a list of numbers.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Ollama
+# ---------------------------------------------------------------------------
+"""Practice 22: Ollama.
+
+- Create a variable for the Ollama chat API URL.
+- Create a dictionary payload with a model name, messages, and `stream: False`.
+- Convert the payload to JSON text with `json.dumps()`.
+- Print the setup commands for pulling and running a local model.
+- Add a comment explaining one reason someone might use a local model.
+- Bonus: write a guarded function that tries an Ollama request and skips
+  cleanly if the service is not running.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# OpenAI API
+# ---------------------------------------------------------------------------
+"""Practice 23: OpenAI API.
+
+- Import `os`.
+- Check whether `OPENAI_API_KEY` is set.
+- Print the basic OpenAI client code shape shown in the lesson.
+- Add a comment explaining why API keys should come from environment variables.
+- Bonus: write a guarded function that imports `OpenAI` and skips cleanly if
+  the package or API key is missing.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Building a Chatbot
+# ---------------------------------------------------------------------------
+"""Practice 24: Building a chatbot.
+
+- Create an `EchoProvider` class with a `.chat()` method.
+- Create a `Chatbot` class that stores a list of messages.
+- Add a method that saves a user message, gets a provider reply, and stores the
+  assistant reply.
+- Run a short scripted conversation with two user messages.
+- Bonus: write an optional input loop that stops when the user types `quit`.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Embeddings
+# ---------------------------------------------------------------------------
+"""Practice 25: Embeddings.
+
+- Write a function that calculates cosine similarity between two vectors.
+- Write a simple function that turns text into a tiny practice vector.
+- Compare one query vector against at least three example text vectors.
+- Print each similarity score.
+- Bonus: write a guarded OpenAI embedding function that skips cleanly if the
+  API key or package is missing.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# RAG
+# ---------------------------------------------------------------------------
+"""Practice 26: RAG.
+
+- Create a small list of document dictionaries with `title` and `text` keys.
+- Write a function that splits documents into smaller chunks.
+- Write a simple keyword scoring function.
+- Retrieve the best chunks for a question.
+- Build an answer string from the retrieved chunks.
+- Add a comment explaining where embeddings could improve the retrieval step.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# AI Agents
+# ---------------------------------------------------------------------------
+"""Practice 27: AI agents.
+
+- Create at least two small tool functions.
+- Store the tools in a dictionary called `TOOLS`.
+- Write a simple fake model function that chooses a tool based on user text.
+- Write an agent function that runs the selected tool.
+- Print the result for a few example user requests.
+- Add a comment explaining that real agents still need approved tools chosen
+  and executed by your Python code.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
+# Optional: Data Type Design and Performance
+# ---------------------------------------------------------------------------
+"""Optional Practice: Data type design and performance.
+
+- Create the same small collection as a list, tuple, set, and dictionary.
+- Use `sys.getsizeof()` to compare their approximate memory sizes.
+- Write one comment explaining why those numbers are only a rough comparison.
+- Create a large list of numbers and a set from that list.
+- Use `time.perf_counter()` to compare one membership check in each collection.
+- Create a list of student dictionaries and a dictionary keyed by student ID.
+- Look up one student by scanning the list, then by using the dictionary key.
+- Add comments explaining when you would choose:
+  - a list
+  - a tuple
+  - a set
+  - a dictionary
+- Bonus: find one part of an earlier practice solution where a different data
+  type might make the code clearer, faster, or smaller.
+"""
+
+# Write your solution here.
+
+
+# ---------------------------------------------------------------------------
 # Example Solutions
 # ---------------------------------------------------------------------------
-"""Loop Practice 08 while-loop example.
+"""Loop Practice 09 while-loop example.
 
-num_small = 5
-num_large = 6
-total_sum = 0
-total_iterations = 0
+counter = 0
 
-while total_sum < 100_000_000:
-    total_sum = num_small + num_large
-    total_iterations += 1
-    num_small = num_large
-    num_large = total_sum
-
-print(f"{total_iterations = }")
+while counter < 5:
+    print(counter)
+    counter += 1
 """

@@ -1,11 +1,12 @@
 # coding: utf-8
-"""Lesson 08: Loops.
+"""Lesson 09: Loops.
 
 Loops repeat code.
 
 - `for` loops are useful when you have a known sequence to iterate through.
 - `while` loops are useful when repetition should continue until a condition
   changes.
+- `range()` creates a sequence of numbers that a `for` loop can use.
 - `break` exits a loop early.
 - `continue` skips the rest of the current loop iteration.
 """
@@ -48,6 +49,16 @@ def use_a_while_loop():
         counter += 1
 
 
+def use_range():
+    """Use range() to create a simple sequence of numbers."""
+    show_section("Using range")
+
+    for number in range(5):
+        print(number)
+
+    print("range(5) gives the loop 0, 1, 2, 3, and 4.")
+
+
 def use_break():
     """Stop a loop as soon as the target value is found."""
     show_section("Using break")
@@ -78,6 +89,7 @@ def main():
     loop_over_a_list()
     loop_over_a_string()
     use_a_while_loop()
+    use_range()
     use_break()
     use_continue()
 

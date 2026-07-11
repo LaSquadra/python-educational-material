@@ -1,5 +1,5 @@
 # coding: utf-8
-"""Lesson 13: Classes.
+"""Lesson 14: Classes.
 
 Classes let you define your own types of objects. An object can store data in
 attributes and use functions called methods.
@@ -59,14 +59,15 @@ def inspect_a_builtin_class():
     show_section("Built-in classes")
 
     print(f"type(5): {type(5)}")
-    print(f"Does int support addition? {'__add__' in dir(int)}")
+    print(f"type('Python'): {type('Python')}")
+    print("Built-in values come from classes too.")
 
 
 def create_custom_objects():
     """Create and use instances of custom classes."""
     show_section("Custom classes")
 
-    student = Student("Ada", current_lesson=13)
+    student = Student("Ada", current_lesson=14)
 
     print(student.describe())
     student.advance_lesson()
@@ -78,8 +79,8 @@ def compose_objects():
     show_section("Objects working together")
 
     course = Course("Python Basics")
-    course.add_student(Student("Ada", current_lesson=13))
-    course.add_student(Student("Grace", current_lesson=10))
+    course.add_student(Student("Ada", current_lesson=14))
+    course.add_student(Student("Grace", current_lesson=11))
 
     print(f"Course: {course.title}")
     course.list_students()

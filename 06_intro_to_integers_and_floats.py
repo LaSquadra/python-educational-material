@@ -52,11 +52,27 @@ def calculate_with_numbers():
     print(f"{number_1} // {number_2} = {number_1 // number_2}")
 
 
+def preview_number_helpers():
+    """Show common helpers used with numbers."""
+    show_section("Number helpers to explore")
+
+    temperature = -12.6
+    scores = [88, 100, 72, 91]
+
+    print(f"abs({temperature}) = {abs(temperature)}")
+    print(f"round(3.14159, 2) = {round(3.14159, 2)}")
+    print(f"min({scores}) = {min(scores)}")
+    print(f"max({scores}) = {max(scores)}")
+    print(f"sum({scores}) = {sum(scores)}")
+    print("int(text) and float(text) can convert numeric strings.")
+
+
 def main():
     """Run each lesson section in order."""
     inspect_numbers()
     format_numbers_in_strings()
     calculate_with_numbers()
+    preview_number_helpers()
 
 
 if __name__ == "__main__":
