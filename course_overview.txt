@@ -99,7 +99,7 @@ Python Overview:
 21) Intro to Multiprocessing
     - Processes for CPU-style work
     - Process pools
-    - Windows __main__ guard
+    - Cross-platform __main__ guard
 22) Intro to Ollama
     - Running local language models
     - Pulling models

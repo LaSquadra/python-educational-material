@@ -68,6 +68,9 @@ def show_shell_examples():
     print()
     print("macOS/Linux shell example:")
     print("export PYTHON_LESSON_MODE=review")
+    print()
+    print("Environment variable syntax changes by shell, but Python reads")
+    print("the value the same way with os.environ.get().")
 
 
 def main():

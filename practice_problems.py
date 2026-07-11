@@ -306,8 +306,13 @@ Break and continue:
 """Practice 16: Packages and virtual environments.
 
 - Print the command to create a virtual environment.
+- Print the command to create a virtual environment on Windows.
+- Print the command to create a virtual environment on macOS or Linux.
 - Print the command to activate it in Windows PowerShell.
-- Print the command to install one package with `python -m pip`.
+- Print the command to activate it on macOS or Linux.
+- Print the command to install one package on Windows with `python -m pip`.
+- Print the command to install one package on macOS or Linux with
+  `python3 -m pip`.
 - Create a string that looks like a small `requirements.txt` file.
 - Print the command to install packages from `requirements.txt`.
 - Add a comment explaining why virtual environments are useful.
@@ -358,6 +363,7 @@ Break and continue:
 - Read an optional setting and provide a fallback value.
 - Check whether a fake API key environment variable is set.
 - Print shell examples for setting an environment variable.
+- Include both Windows PowerShell and macOS/Linux shell examples.
 - Do not print a real secret value.
 """
 
@@ -389,8 +395,8 @@ Break and continue:
 - Write a function that squares a number.
 - Create a `multiprocessing.Process` that calls a function.
 - Start the process and join it.
-- Add a comment explaining why multiprocessing code belongs under the
-  `if __name__ == "__main__":` guard on Windows.
+- Add a comment explaining why multiprocessing startup code belongs under the
+  `if __name__ == "__main__":` guard, especially on Windows.
 - Bonus: use `ProcessPoolExecutor` to square a list of numbers.
 """
 

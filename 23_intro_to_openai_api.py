@@ -30,6 +30,8 @@ def explain_environment_variables():
     print("Set an environment variable named OPENAI_API_KEY instead.")
     print("PowerShell example:")
     print("  $env:OPENAI_API_KEY = 'your-api-key-here'")
+    print("macOS/Linux shell example:")
+    print("  export OPENAI_API_KEY='your-api-key-here'")
 
 
 def get_openai_client():
@@ -42,7 +44,8 @@ def get_openai_client():
         from openai import OpenAI
     except ImportError:
         print("The openai package is not installed, so the live API demo was skipped.")
-        print("Install it with: python -m pip install openai")
+        print("Install it on Windows with: python -m pip install openai")
+        print("Install it on macOS or Linux with: python3 -m pip install openai")
         return None
 
     return OpenAI()

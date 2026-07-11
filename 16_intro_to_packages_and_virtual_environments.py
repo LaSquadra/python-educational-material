@@ -9,7 +9,8 @@ Important package vocabulary:
 
 - A package is reusable Python code that can be installed.
 - `pip` is Python's package installer.
-- `python -m pip` runs pip with the Python interpreter you chose.
+- `python -m pip` or `python3 -m pip` runs pip with the Python interpreter you
+  chose.
 - `venv` creates an isolated virtual environment for a project.
 - `requirements.txt` is a common file for listing packages a project needs.
 
@@ -37,11 +38,17 @@ def print_virtual_environment_commands():
     """Print common venv commands without executing them."""
     show_section("Creating and activating a venv")
 
-    print("Create a virtual environment:")
+    print("Create a virtual environment on Windows:")
     print("  python -m venv .venv")
+    print()
+    print("Create a virtual environment on macOS or Linux:")
+    print("  python3 -m venv .venv")
     print()
     print("Activate it on Windows PowerShell:")
     print("  .venv\\Scripts\\Activate.ps1")
+    print()
+    print("Activate it on Windows Command Prompt:")
+    print("  .venv\\Scripts\\activate.bat")
     print()
     print("Activate it on macOS or Linux:")
     print("  source .venv/bin/activate")
@@ -51,14 +58,23 @@ def print_pip_commands():
     """Print common pip commands without installing anything."""
     show_section("Installing packages with pip")
 
-    print("Upgrade pip:")
+    print("Upgrade pip on Windows:")
     print("  python -m pip install --upgrade pip")
     print()
-    print("Install one package:")
+    print("Upgrade pip on macOS or Linux:")
+    print("  python3 -m pip install --upgrade pip")
+    print()
+    print("Install one package on Windows:")
     print("  python -m pip install requests")
     print()
-    print("See installed packages:")
+    print("Install one package on macOS or Linux:")
+    print("  python3 -m pip install requests")
+    print()
+    print("See installed packages on Windows:")
     print("  python -m pip list")
+    print()
+    print("See installed packages on macOS or Linux:")
+    print("  python3 -m pip list")
 
 
 def explain_requirements_files():
@@ -70,8 +86,11 @@ def explain_requirements_files():
     print("A requirements.txt file might contain:")
     print(requirements_text)
     print()
-    print("Install everything listed in that file:")
+    print("Install everything listed in that file on Windows:")
     print("  python -m pip install -r requirements.txt")
+    print()
+    print("Install everything listed in that file on macOS or Linux:")
+    print("  python3 -m pip install -r requirements.txt")
 
 
 def explain_importing_after_install():

@@ -78,7 +78,8 @@ def demonstrate_optional_openai_embedding():
         from openai import OpenAI
     except ImportError:
         print("The openai package is not installed.")
-        print("Install it with: python -m pip install openai")
+        print("Install it on Windows with: python -m pip install openai")
+        print("Install it on macOS or Linux with: python3 -m pip install openai")
         return
 
     client = OpenAI()
