@@ -5,11 +5,12 @@ Multiprocessing runs work in separate Python processes. This can help with
 CPU-bound work, where the computer is busy calculating instead of waiting for
 I/O.
 
-Windows safety note:
+Cross-platform safety note:
 
 - Put multiprocessing startup code inside `if __name__ == "__main__":`.
-- Without that guard, Windows may start child processes incorrectly.
-- This lesson follows that pattern at the bottom of the file.
+- This is required on Windows and still a good habit on macOS and Linux.
+- Without that guard, child processes may start your script in surprising ways.
+- This lesson follows the guard pattern at the bottom of the file.
 """
 
 import multiprocessing
