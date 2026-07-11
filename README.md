@@ -100,8 +100,6 @@ python -m pip install openai
 $env:OPENAI_API_KEY = "your-api-key-here"
 ```
 
-Never commit real API keys or secrets to this repository.
-
 ## Notes For Students
 
 - You are not expected to memorize everything.
@@ -110,3 +108,4 @@ Never commit real API keys or secrets to this repository.
   explore.
 - Good Python code is usually clear first, then optimized when there is a real
   reason to optimize.
+  
