@@ -520,6 +520,28 @@ Break and continue:
 
 
 # ---------------------------------------------------------------------------
+# Final Project
+# ---------------------------------------------------------------------------
+"""Final Project.
+
+Use `final_project_brief.md` to design and build a small Python project.
+
+- Choose a real or realistic problem.
+- Decide what data the program needs to store.
+- Choose data types intentionally and explain why they fit.
+- Use functions to organize repeated logic.
+- Use a class if it makes the program clearer, or explain why one is not needed.
+- Read or write at least one file.
+- Handle at least one likely error with `try` and `except`.
+- Add a short README or top-level docstring that explains how to run it.
+- Bonus: add one advanced feature from APIs, Ollama, OpenAI, embeddings, RAG,
+  or agents if it genuinely fits your project.
+"""
+
+# Write your final project in a separate file or folder.
+
+
+# ---------------------------------------------------------------------------
 # Example Solutions
 # ---------------------------------------------------------------------------
 """Loop Practice 09 while-loop example.

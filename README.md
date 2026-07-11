@@ -59,6 +59,7 @@ skip cleanly if the tools, packages, services, or API keys are not configured.
 4. Experiment by changing values, adding print statements, and trying methods
    shown in each lesson.
 5. Use `course_overview.txt` as the detailed syllabus.
+6. Use `final_project_brief.md` when you are ready to build a small project.
 
 Run a lesson from the repository folder:
 
@@ -103,6 +104,11 @@ There is also an optional lesson:
 
 - `optional_data_type_design_and_performance.py`: choosing data types for
   readability, memory use, lookup speed, mutability, and better code design
+
+The final project guide is:
+
+- `final_project_brief.md`: project ideas, requirements, design questions, and
+  a review checklist
 
 ## Optional AI Setup
 
