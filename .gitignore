@@ -1,0 +1,6 @@
+__pycache__/
+.idea/
+
+# Files created by running lesson demos.
+demo_student.json
+temp_file.txt
