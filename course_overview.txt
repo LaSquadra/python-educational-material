@@ -18,7 +18,8 @@ Python Overview:
     - Integer int()
     - Float float()
     - Bool bool()
-    - List lst()
+    - List list()
+    - Tuple tuple()
     - Set set()
     - Dictionary dict()
 1) Variables
@@ -133,3 +134,10 @@ Optional) Data Type Design and Performance
     - Mutability and design tradeoffs
     - Measuring before optimizing
 Final Step: Create a project
+    - Choose a real problem or workflow
+    - Store data with appropriate Python data types
+    - Read or write files
+    - Use functions and classes to organize code
+    - Handle errors clearly
+    - Optionally use APIs, LLMs, embeddings, RAG, or agents
+    - See final_project_brief.md for project ideas and requirements
