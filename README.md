@@ -58,8 +58,10 @@ skip cleanly if the tools, packages, services, or API keys are not configured.
 3. Open `practice_problems.py` and complete the matching practice section.
 4. Experiment by changing values, adding print statements, and trying methods
    shown in each lesson.
-5. Use `course_overview.txt` as the detailed syllabus.
-6. Use `final_project_brief.md` when you are ready to build a small project.
+5. Read the matching note in `lesson_notes/` when you want more context. Start
+   with `lesson_notes/README.md` for the full note index.
+6. Use `course_overview.txt` as the detailed syllabus.
+7. Use `final_project_brief.md` when you are ready to build a small project.
 
 Run a lesson from the repository folder:
 
@@ -104,6 +106,10 @@ There is also an optional lesson:
 
 - `optional_data_type_design_and_performance.py`: choosing data types for
   readability, memory use, lookup speed, mutability, and better code design
+
+Each lesson also has a companion Markdown note in `lesson_notes/`. These notes
+explain the ideas in more depth without adding extra complexity to the runnable
+lesson files.
 
 The final project guide is:
 
